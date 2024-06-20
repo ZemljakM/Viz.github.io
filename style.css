@@ -307,3 +307,10 @@ input[type="range"]::-ms-thumb:active {
     transform: translateY(-50%); 
     pointer-events: none;
 }
+
+path.domain {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+    stroke-width: 2px; 
+}
