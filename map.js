@@ -172,7 +172,7 @@ function filterDataByYear(year) {
             .attr("cx", function(d) { return projection([parseFloat(d.longitude), parseFloat(d.latitude)])[0]; })
             .attr("cy", function(d) { return projection([parseFloat(d.longitude), parseFloat(d.latitude)])[1]; })
             .attr("r", 2.5)
-            .style("fill", function(d) { return d.danger === "1" ? "maroon" : "#002D62";})
+            .style("fill", function(d) { return d.danger === "1" ? "red" : "#002D62";})
             .style("stroke-width", 0.3)
             .on("mouseover", function(d) {
                 div.transition()
@@ -211,7 +211,7 @@ function filterDataByCountry(country, year) {
             .attr("cx", function(d) { return projection([parseFloat(d.longitude), parseFloat(d.latitude)])[0]; })
             .attr("cy", function(d) { return projection([parseFloat(d.longitude), parseFloat(d.latitude)])[1]; })
             .attr("r", 2.5)
-            .style("fill", function(d) { return d.danger === "1" ? "maroon" : "#002D62";})
+            .style("fill", function(d) { return d.danger === "1" ? "red" : "#002D62";})
             .style("stroke", "black")
             .style("stroke-width", 0.3)
             .on("mouseover", function(d) {
